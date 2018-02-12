@@ -1,0 +1,25 @@
+プロジェクトの作成
+django-admin.py startproject mybook
+データベースマイグレイト
+python manage.py migrate
+ユーザー作成
+python manage.py createsuperuser
+サーバー起動
+python manage.py runserver
+ｃｍｓ作成
+python manage.py startapp cms
+
+
+1 models.py を直す
+2 $ python manage.py makemigrations app名
+… models.pyの変更を拾ってマイグレートファイルを作る
+3 $ python manage.py migrate
+… マイグレートファイルをデータベースに反映する
+
+
+1 python manage.py runserver
+開発用サーバを起動します。
+2 http://127.0.0.1:8000/admin/
+ブラウザでアクセスします。
+3 $ python manage.py createsuperuser　
+で初期化したスーパーユーザー admin/hogefuga でログインします。
